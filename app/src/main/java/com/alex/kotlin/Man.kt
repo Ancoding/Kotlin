@@ -10,5 +10,12 @@ package com.alex.kotlin
  * @Version: 1.0.0
  * @Description: 此类用于
  */
-class Man {
+class Man(name: String) : Human(name), IMan {
+    override fun eat() {
+        println("${name}啊啊的大口吃")
+    }
+
+    override fun pee() {
+        println("${name}站着尿尿")
+    }
 }
